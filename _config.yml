@@ -1,0 +1,85 @@
+# Site settings
+title: Primordial Analytics
+tagline: "AI-focused Analytics"
+email: contact@primordialanalytics.com
+description: "Primordial Analytics Consulting is an AI-focused analytics firm."
+baseurl: ""
+url: https://www.primordialanalytics.com
+permalink: /:categories/:title/ # e.g. articles/title.html
+
+# add collections
+collections:
+   casestudies:
+
+# add other dirs
+includes:
+- vendor
+- favicons
+- fonts
+- img
+- js
+
+# exclude other dirs
+exclude:
+- node_modules
+- gulpfile.js
+- gulpfile_example.js
+- README.md
+- svg
+- .idea
+
+# Team names, titles and social links
+people:
+- name: Coming soon
+  pic: anon
+  position: Chief Data Scientist
+  social:
+    - title: linkedin
+      url: #
+    - title: github
+      url: #
+    - title: personal
+      url: #
+
+- name: Coming soon
+  pic: anon
+  position: Chief AI Engineer
+  social:
+    - title: linkedin
+      url: #
+    - title: github
+      url: #
+    - title: personal
+      url: #
+
+- name: Coming soon
+  pic: anon
+  position: Chief Data Engineer
+  social:
+    - title: linkedin
+      url: #
+    - title: github
+      url: #
+    - title: personal
+      url: #
+
+# Social networks usernames
+# (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/primordialytics
+  - title: facebook
+    url: https://www.facebook.com/
+  - title: linkedin
+    url: https://linkedin.com/company/primordial-analytics/
+  - title: github
+    url: https://github.com/primordial-analytics
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Technology Drive
+  - line: Knoxville, TN 37932
+
+# Build settings
+markdown: kramdown
+permalink: pretty

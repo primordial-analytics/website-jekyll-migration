@@ -1,0 +1,19 @@
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  white: FFFFFF
+  black: 000000
+  gray-200: 55507C
+  gray-400: 35305E
+  gray-900: 191445
+  primary: B3A369
+  primary_dark: 645211
+  secondary: 55507C
+  secondary_dark: 191445
+  bg_light: b9b7c726
+  muted: 777
+
+# Font Families
+font:
+  primary: 'Droid+Serif:400,700,400italic,700italic'
+  secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+
