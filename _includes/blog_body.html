@@ -1,0 +1,41 @@
+<!-- Post Listing -->
+<section id="blog">
+    <div class="container">
+        <div class="row text-justify">
+            <div class="col-lg-8 offset-lg-2">
+                <div id="ButtonBarDivUnit" class="ButtonBarDiv">
+                    <div>
+                        <a target="_blank"
+                           href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fwww.kcavagnolo.com%2Fblog%2Fatom.xml">
+                            <input type="image"
+                                   src="http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png"
+                                   alt="follow in feedly" width="71" height="28"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Posts -->
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="posts">
+                    {% for post in site.posts %}
+                    <article class="post">
+                        <h2 class="post-title">
+                            <a href="{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                        </h2>
+                        <h5>{{ post.description }}</h5>
+                        Posted:
+                        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date |
+                            date_to_string }}
+                        </time>
+                        <br>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

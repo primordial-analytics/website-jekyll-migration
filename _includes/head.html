@@ -11,13 +11,13 @@
     <meta charset="utf-8">
 
     <!-- gopt hiding snippet -->
-    <style>.async-hide { opacity: 0 !important} </style>
+    <!--<style>.async-hide { opacity: 0 !important} </style>
     <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
     h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
     })(window,document.documentElement,'async-hide','dataLayer',4000,
     {'GTM-MDCWFS9':true});
-    </script>
+    </script>-->
 
     <!-- remaining metadata -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -56,17 +56,17 @@
 
     <!-- stylesheets -->
     <!-- bootstrap -->
-    <link rel="preload" href="vendor/bootstrap/css/bootstrap.min.css" as="style"
+    <link rel="preload" href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css" as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css">
     </noscript>
 
     <!-- font-awesome -->
-    <link rel="preload" href="vendor/font-awesome/css/font-awesome.min.css" as="style"
+    <link rel="preload" href="{{ site.baseurl }}/vendor/font-awesome/css/font-awesome.min.css" as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/vendor/font-awesome/css/font-awesome.min.css">
     </noscript>
 
     <!-- fontawesome -->
@@ -80,17 +80,17 @@
     </noscript>
 
     <!-- custom -->
-    <link rel="preload" href="style.css" as="style"
+    <link rel="preload" href="{{ site.baseurl }}/style.css" as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     </noscript>
 
     <!-- custom font -->
-    <link rel="preload" href="fonts/sansation/stylesheet.css" as="style" type="text/css" charset="utf-8"
+    <link rel="preload" href="{{ site.baseurl }}/fonts/sansation/stylesheet.css" as="style" type="text/css" charset="utf-8"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="fonts/sansation/stylesheet.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="{{ site.baseurl }}/fonts/sansation/stylesheet.css" type="text/css" charset="utf-8">
     </noscript>
 
     <!-- google fonts -->
@@ -109,27 +109,27 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="favicons/android-icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicons/android-icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="72x72" href="favicons/android-icon-72x72.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicons/android-icon-48x48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/android-icon-36x36.png">
-    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}{{ site.baseurl }}/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="{{ site.baseurl }}/favicons/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/favicons/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="{{ site.baseurl }}/favicons/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ site.baseurl }}/favicons/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicons/android-icon-36x36.png">
+    <link rel="manifest" href="{{ site.baseurl }}/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicons/ms-icon-310x310.png">
-    <meta name="msapplication-TileImage" content="favicons/ms-icon-150x150.png">
-    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-    <meta name="msapplication-TileImage" content="favicons/ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/ms-icon-310x310.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/ms-icon-70x70.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- seo -->

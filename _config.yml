@@ -1,15 +1,22 @@
 # Site settings
+name: Primordial Analytics
 title: Primordial Analytics
 tagline: "AI-focused Analytics"
 email: contact@primordialanalytics.com
 description: "Primordial Analytics Consulting is an AI-focused analytics firm."
+blogurl: "/blog/"
 baseurl: ""
 url: https://www.primordialanalytics.com
-permalink: /:categories/:title/ # e.g. articles/title.html
+markdown: kramdown
+highlighter: rouge
 
 # add collections
 collections:
-   casestudies:
+  casestudies:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
 
 # add other dirs
 includes:
