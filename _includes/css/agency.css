@@ -205,6 +205,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 header.mizzenhead {
+  height: 0px;
   text-align: center;
   color: white;
   background-image: url("/img/galaxy-darkened.jpg");
@@ -781,4 +782,57 @@ header .overlay {
   header video {
     display: none;
   }
+}
+
+.post {
+  display: inline-block;
+  border-bottom: 1px solid #B9B7C7;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.post-left {
+  width: 75px;
+  float: left;
+  color: #B9B7C7;
+  padding: 4px 10px 0px 0px;
+  margin-right: 21px;
+  border-right: 2px solid #B9B7C7;
+  text-align: right;
+}
+
+.post-date {
+  padding-top: 32px;
+  line-height: 30px;
+}
+
+div.post-left div.post-date span {
+  font-size: 160%;
+  letter-spacing: -2px;
+}
+
+.post-right {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+
+#post-title {
+  margin: 0px 0px 10px;
+  padding: 0px;
+  font-size: 2em;
+}
+
+#post-description {
+  margin: 0px 0px 20px;
+}
+
+.post-right h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.post-overview-right {
+  margin-top: -10px;
+  float: left;
 }

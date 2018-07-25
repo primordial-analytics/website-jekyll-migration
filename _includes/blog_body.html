@@ -5,11 +5,10 @@
             <div class="col-lg-8 offset-lg-2">
                 <div id="ButtonBarDivUnit" class="ButtonBarDiv">
                     <div>
-                        <a target="_blank"
-                           href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fwww.kcavagnolo.com%2Fblog%2Fatom.xml">
-                            <input type="image"
-                                   src="http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png"
-                                   alt="follow in feedly" width="71" height="28"></a>
+                        <a href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.primordialanalytics.com%2Fblog%2Fatom.xml'
+                           target='blank'><img id='feedlyFollow'
+                                               src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png'
+                                               alt='follow us in feedly' width='71' height='28'></a>
                     </div>
                 </div>
             </div>
@@ -18,23 +17,34 @@
         <!-- Posts -->
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <div class="posts">
-                    {% for post in site.posts %}
-                    <article class="post">
-                        <h2 class="post-title">
-                            <a href="{{ post.url }}">
-                                {{ post.title }}
-                            </a>
+                {% for post in site.posts %}
+                <div class="post">
+                    <div class="post-left">
+                        <div class="post-date">
+                            {{ post.date | date: "%b %d" }}
+                            <span>{{ post.date | date: "%Y" }}</span>
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <h2 id="post-title">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
                         </h2>
-                        <h5>{{ post.description }}</h5>
-                        Posted:
-                        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date |
-                            date_to_string }}
-                        </time>
-                        <br>
-                    </article>
-                    {% endfor %}
+                        <h5 id="post-description">
+                            {{ post.description }}
+                        </h5>
+                        <div class="snippet">
+                            <div class="post-overview-left">
+                            </div>
+                            <div class="post-overview-right">
+                                <p>
+                                    {{ post.content | strip_html | truncatewords: 50 }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ post.url }}" style="float:right;">Continue Reading &raquo;</a>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>

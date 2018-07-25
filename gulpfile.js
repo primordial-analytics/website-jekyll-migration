@@ -58,7 +58,8 @@ gulp.task('vendor', function() {
 gulp.task('css:compile', function() {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass.sync({outputStyle: 'expanded'})
-    .on('error', sass.logError))
+        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+     )
     .pipe(header(banner, {pkg: pkg}))
     .pipe(gulp.dest('./_includes/css'))
 });
@@ -66,7 +67,9 @@ gulp.task('css:compile', function() {
 // Minify CSS
 gulp.task('css:minify', ['css:compile'], function() {
   return gulp.src(['./_includes/css/*.css', '!./_includes/css/*.min.css'])
-    .pipe(cleanCSS())
+    .pipe(cleanCSS()
+        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+     )
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./_includes/css'))
     .pipe(browserSync.stream());
@@ -78,8 +81,9 @@ gulp.task('css', ['css:compile', 'css:minify']);
 // Minify JavaScript
 gulp.task('js:minify', function() {
   return gulp.src(['./js/*.js', '!./js/*.min.js', '!./js/google*'])
-    .pipe(uglify())
-    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+    .pipe(uglify()
+        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+     )
     .pipe(rename({suffix: '.min'}))
     .pipe(header(banner, {pkg: pkg}))
     .pipe(gulp.dest('./js'))
@@ -103,7 +107,7 @@ gulp.task('browserSync', function() {
 
 // Dev task
 gulp.task('dev', ['vendor', 'css', 'js', 'browserSync'], function() {
-  gulp.watch('./_sass/*.scss', ['css']);
+  gulp.watch('./_scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
