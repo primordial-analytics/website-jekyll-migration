@@ -1,6 +1,6 @@
 ---
 title: Workload Management
-subtitle: Order from Chaos
+subtitle: Disorder is matter out of place
 layout: default
 modal-id: 4
 date: 2018-07-01
@@ -8,12 +8,12 @@ img: workload.png
 thumbnail: workload-thumbnail.png
 ---
 
-**Client's Problem:** "Our analysis department is overrun with
+**Client's Problem:** _"Our analysis department is overrun with
 work, and our business partners don't have the people or resources to
 self-service. Our people end-up being managed through their email
 inbox with no coordination, meaning frustrated business partners,
 duplicated work, cut corners (tech debt), no time for innovation, and
-low morale. How do we fix this?"
+low morale. How do we fix this?"_
 
 ![alt][image]
 
@@ -37,7 +37,7 @@ agile techniques (backlogs, sprints, stand-ups, reviews,
 retrospectives, etc.) and encouraged to modify them to suit their
 needs.
 
-Additionally, a [process for managing and governing work requests][process]
+Additionally, a process for managing and governing work requests
 was designed and implemented with the department and executive teams
 to separate the distinct forms of work we found: PMO-governed
 strategic projects, support, and ad hoc analytics. The outcome was

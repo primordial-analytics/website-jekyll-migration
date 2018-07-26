@@ -87,7 +87,8 @@
     </noscript>
 
     <!-- custom font -->
-    <link rel="preload" href="{{ site.baseurl }}/fonts/sansation/stylesheet.css" as="style" type="text/css" charset="utf-8"
+    <link rel="preload" href="{{ site.baseurl }}/fonts/sansation/stylesheet.css" as="style" type="text/css"
+          charset="utf-8"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="{{ site.baseurl }}/fonts/sansation/stylesheet.css" type="text/css" charset="utf-8">
@@ -140,5 +141,30 @@
           href="https://www.primordialanalytics.com/blog/atom.xml"/>
     <link rel="alternate" type="application/rss+xml" title="Atom feed"
           href="https://www.primordialanalytics.com/blog/rss.xml"/>
+
+    <!-- cookie compliance -->
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+    "palette": {
+    "popup": {
+    "background": "#ffffff",
+    "text": "#191445"
+    },
+    "button": {
+    "background": "#191445",
+    "text": "#ffffff"
+    }
+    },
+    "content": {
+    "message": "We use cookies to provide and improve our services. By using our site, you consent to cookies.",
+    "dismiss": "Accept",
+    "href": "http://primordialanalytics.com/privacypolicy"
+    }
+    })});
+    </script>
 
 </head>
