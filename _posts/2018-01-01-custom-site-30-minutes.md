@@ -53,8 +53,7 @@ records will update in the tubes of the internet, and you should
 be able to type in your domain name in a browser and not get a
 404 error.
 
-<img class="img-basic"
-src="http://www.kcavagnolo.com/img/gdomains.png" alt="DNS Setup">
+<img class="img-basic" src="http://www.kcavagnolo.com/img/gdomains.png" class="img-fluid" alt="DNS Setup">
 
 Cool, you've got a live connection behind-the-scenes if you
 don't get a 404. So, what now? Let's put up a web page. I am a

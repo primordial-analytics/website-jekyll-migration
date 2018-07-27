@@ -9,7 +9,7 @@
                 <ul class="list-inline social-buttons">
                     {% for network in site.social %}
                     <li class="list-inline-item"><a href="{{ network.url }}" target="_blank"><i
-                            class="fab fa-{{ network.title }}"></i></a>
+                            class="{{ network.icon }}"></i></a>
                     </li>
                     {% endfor %}
                 </ul>

@@ -9,79 +9,24 @@
             </div>
         </div>
         <div class="row">
+            {% for person in site.people %}
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/cavagnolo.png" alt="">
-                    <h4>Ken Cavagnolo</h4>
-                    <p class="text-muted">Chief Data Scientist</p>
+                    <img class="mx-auto rounded-circle" src="img/team/{{ person.pic }}" alt="">
+                    <h4>{{ person.name }}</h4>
+                    <p class="text-muted">{{ person.position }}</p>
                     <ul class="list-inline social-buttons">
+                        {% for network in person.social %}
                         <li class="list-inline-item">
-                            <a target="_blank" href="https://www.linkedin.com/in/kencavagnolo">
-                                <i class="fab fa-linkedin-in"></i>
+                            <a target="_blank" href="{{ network.url }}">
+                                <i class="{{ network.icon }}"></i>
                             </a>
                         </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://github.com/kcavagnolo">
-                                <i class="fab fa-github-alt"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.kcavagnolo.com/">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/anon.png" alt="">
-                    <h4>Coming Soon</h4>
-                    <p class="text-muted">Chief AI Officer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.linkedin.com/in/#/">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://github.com/#">
-                                <i class="fab fa-github-alt"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.#.com/">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/anon.png" alt="">
-                    <h4>Coming Soon</h4>
-                    <p class="text-muted">Chief Data Officer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.linkedin.com/in/#/">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://github.com/#">
-                                <i class="fab fa-github-alt"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.#.com/">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            {% endfor %}
         <div class="row">
             <div class="col-lg-12 mx-auto text-center">
                 <p class="large text-muted">Our project teams are composed of extremely talented, 100%

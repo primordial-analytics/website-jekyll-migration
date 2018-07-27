@@ -9,6 +9,7 @@ baseurl: ""
 url: https://www.primordialanalytics.com
 markdown: kramdown
 highlighter: rouge
+permalink: pretty
 
 # add collections
 collections:
@@ -16,7 +17,6 @@ collections:
   posts:
     output: true
     permalink: /blog/:title/
-
 
 # add other dirs
 includes:
@@ -37,56 +37,51 @@ exclude:
 
 # Team names, titles and social links
 people:
-- name: Coming soon
-  pic: anon
+- name: Ken Cavagnolo
+  pic: cavagnolo.png
   position: Chief Data Scientist
   social:
-    - title: linkedin
-      url: #
-    - title: github
-      url: #
-    - title: personal
-      url: #
+    - icon: fab fa-linkedin-in
+      url: https://www.linkedin.com/in/kencavagnolo
+    - icon: fab fa-github-alt
+      url: https://github.com/kcavagnolo
+    - icon: fas fa-user
+      url: https://www.kcavagnolo.com
 
 - name: Coming soon
-  pic: anon
+  pic: anon.png
   position: Chief AI Engineer
   social:
-    - title: linkedin
+    - icon: fab fa-linkedin-in
       url: #
-    - title: github
+    - icon: fab fa-github-alt
       url: #
-    - title: personal
+    - icon: fas fa-robot
       url: #
 
 - name: Coming soon
-  pic: anon
+  pic: anon.png
   position: Chief Data Engineer
   social:
-    - title: linkedin
+    - icon: fab fa-linkedin-in
       url: #
-    - title: github
+    - icon: fab fa-github-alt
       url: #
-    - title: personal
+    - icon: fab fa-stack-overflow
       url: #
 
 # Social networks usernames
-# (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
+  - icon: fab fa-twitter
     url: https://twitter.com/primordialytics
-  - title: facebook
-    url: https://www.facebook.com/
-  - title: linkedin
+  - icon: fab fa-facebook-f
+    url: https://fb.me/primordialytics
+  - icon: fab fa-linkedin-in
     url: https://linkedin.com/company/primordial-analytics/
-  - title: github
+  - icon: fab fa-github-alt
     url: https://github.com/primordial-analytics
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
   - line: Technology Drive
   - line: Knoxville, TN 37932
-
-# Build settings
-markdown: kramdown
-permalink: pretty
