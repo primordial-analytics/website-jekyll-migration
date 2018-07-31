@@ -7,9 +7,9 @@ description: "Primordial Analytics Consulting is an AI-focused analytics firm."
 blogurl: "/blog/"
 baseurl: ""
 url: https://www.primordialanalytics.com
+permalink: pretty
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
 
 # add collections
 collections:

@@ -3,11 +3,13 @@
     <div class="container">
         <div class="row text-justify">
             <div class="col-lg-8 offset-lg-2">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ site.url }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ site.url }}/blog">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+                </ol>
                 <div class="date">
                     <span>{{ page.date | date_to_long_string }}</span>
-                </div>
-                <div>
-                    {% include feedly.html %}
                 </div>
                 <div class="content">
                     <div>
@@ -24,4 +26,5 @@
         {% endif %}
         <hr>
     </div>
+    <script id="dsq-count-scr" src="//primordialytics.disqus.com/count.js" async></script>
 </section>
