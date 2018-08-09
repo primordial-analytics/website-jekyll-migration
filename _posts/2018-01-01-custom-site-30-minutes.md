@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Website in 30 Minutes
-description: Setup and Build a Web Site on a Custom Domain
+title: Our take on "AI" and the Industry
+description: What we do at Primordial and why we exist
 comments: true
 tweets: true
 ---
