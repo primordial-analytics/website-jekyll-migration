@@ -3,7 +3,7 @@ name: Primordial Analytics
 title: Primordial Analytics
 tagline: "AI-focused Analytics"
 email: contact@primordialanalytics.com
-description: "Primordial Analytics Consulting is an AI-focused analytics firm."
+description: "Primordial Analytics is an AI-focused consultancy."
 blogurl: "/blog/"
 baseurl: ""
 url: https://www.primordialanalytics.com
@@ -13,6 +13,7 @@ highlighter: rouge
 
 # add collections
 collections:
+  team:
   casestudies:
   posts:
     output: true
@@ -34,41 +35,6 @@ exclude:
 - README.md
 - svg
 - .idea
-
-# Team names, titles and social links
-people:
-- name: Ken Cavagnolo
-  pic: cavagnolo.png
-  position: Chief Data Scientist
-  social:
-    - icon: fab fa-linkedin-in
-      url: https://www.linkedin.com/in/kencavagnolo
-    - icon: fab fa-github-alt
-      url: https://github.com/kcavagnolo
-    - icon: fas fa-user
-      url: https://www.kcavagnolo.com
-
-- name: Coming soon
-  pic: anon.png
-  position: Chief AI Engineer
-  social:
-    - icon: fab fa-linkedin-in
-      url: #
-    - icon: fab fa-github-alt
-      url: #
-    - icon: fas fa-robot
-      url: #
-
-- name: Coming soon
-  pic: anon.png
-  position: Chief Data Engineer
-  social:
-    - icon: fab fa-linkedin-in
-      url: #
-    - icon: fab fa-github-alt
-      url: #
-    - icon: fab fa-stack-overflow
-      url: #
 
 # Social networks usernames
 social:
